@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    font-size: 50px;
+}
+
+section {
+    display: flex;
+    margin: 20px 0;
+    height: 400px;
+    background-color: #789;
+}
+
+.first{
+    justify-content: center;
+    align-items: center;
+}
+
+.second{
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.third{
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.one {
+    background-color: gold;
+}
+
+.two {
+    background-color: lime;
+}
+
+.three {
+    background-color: royalblue;
+}
+
+.four {
+    background-color: tomato;
+}

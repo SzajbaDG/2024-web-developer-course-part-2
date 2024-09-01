@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+}
+
+.sky{
+    position: relative;
+    height: 60vh;
+    background-color: deepskyblue;
+    animation: sky 8s linear infinite;
+}
+
+.sun{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: gold;
+    box-shadow: 0 0 70px gold;
+    animation: sunset 8s linear infinite;
+}
+
+.ground{
+    position: relative;
+    bottom: 0;
+    height: 40vh;
+    background-color: saddlebrown;
+}
+
+.grass{
+    position: absolute;
+    top: 0;
+    height: 200px;
+    width: 100%;
+    background-color: lime;
+}
+
+.road{
+    position: absolute;
+    top: 30px;
+    height: 120px;
+    width: 100%;
+    background-color: slategrey;
+}
+
+.car{
+    position: absolute;
+    top: -15px;
+    left: 200px;
+    height: 70px;
+    width: 150px;
+    background-color: tomato;
+    border-radius: 15px;
+    animation: car-start 8s ease-in infinite;
+}
+
+.car::after, .car::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 35px;
+    background-color: tomato;
+}
+
+.car::after{
+    right: -20px;
+    border-radius: 0 10px 0 0;
+}
+
+.car::before{
+    left: -20px;
+}
+
+.wheels{
+    position: absolute;
+    bottom: -10px;
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px dashed #999;
+    animation: wheels-start 5s linear infinite;
+}
+
+.front-wheel{
+    right: 8px;
+    z-index: 1;
+}
+
+.rear-wheel{
+    left: 8px;
+}
+
+.window{
+    position: absolute;
+    top: 5px;
+    height: 30px;
+    width: 50px;
+    background-color: blue;
+}
+
+.front-window{
+    right: 0;
+    border-radius: 0 9px 0 0;
+}
+
+.rear-window{
+    left: 0;
+    border-radius: 9px 0 0 0;
+}
+
+@keyframes sunset{
+   0%{
+       top: 1000px;
+   }
+   40%{
+       top: 50px;
+   }
+   60%{
+       top: 50px;
+   }
+   100%{
+       top: 1000px;
+   }
+}
+
+@keyframes sky{
+    0%{
+        background-color: black;
+    }
+    40%{
+        background-color: deepskyblue;
+    }
+    60%{
+        background-color: deepskyblue;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+@keyframes car-start{
+    from{
+        left: -200px;
+    }
+
+    to{
+        left: 1500px;
+    }
+}
+
+@keyframes wheels-start{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}

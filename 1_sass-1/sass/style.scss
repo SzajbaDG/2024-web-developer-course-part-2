@@ -1,0 +1,29 @@
+$h-size: 200px;
+$w-size: 200px;
+$r-color: red;
+$g-color: gold;
+body{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    height: 100vh;
+    background-color: royalblue;
+    font-family: sans-serif;
+}
+p{
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+.square1, .square2 {
+    background-color: $r-color;
+    height: $h-size;
+    width: $w-size;
+    margin: 10px;
+}
+.square3, .square4 {
+    background-color: $g-color;
+    height: $h-size;
+    width: $w-size;
+    margin: 10px;
+}

@@ -1,0 +1,49 @@
+@import './reset';
+
+$h-color: greenyellow;
+$odd-bgc: skyblue;
+$even-bgc: royalblue;
+
+@mixin circle {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    background-color: lime;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+h1{
+    font-size: 3rem;
+    color: $h-color;
+}
+
+h2{
+    font-size: 2.4rem;
+    color: $h-color;
+}
+
+h3{
+    font-size: 1.8rem;
+    color: $h-color;
+}
+
+p{
+    font-size: 1rem;
+}
+
+section{
+    height: 25vh;
+    text-align: center;
+}
+
+.odd{
+    background-color: $odd-bgc;
+}
+
+.even{
+    background-color: $even-bgc;
+}
+
+.circle{
+    @include circle;
+}

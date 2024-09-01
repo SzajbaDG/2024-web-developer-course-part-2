@@ -1,0 +1,47 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: greenyellow;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: greenyellow;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: greenyellow;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  height: 25vh;
+  text-align: center;
+}
+
+.odd {
+  background-color: skyblue;
+}
+
+.even {
+  background-color: royalblue;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background-color: lime;
+  border: 3px solid black;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
